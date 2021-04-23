@@ -1,0 +1,69 @@
+/*********Medai Query********/
+@media (min-width: 896px) and (max-width: 992px) {
+  .left_side h2 {
+    font-size: 1rem;
+  }
+  .left_side p {
+    font-size: 0.7rem;
+  }
+  .left_side ul li strong,
+  .left_side ul li p {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 790px) and (max-width: 895px) {
+    .left_side h2 {
+        font-size: .9rem;
+      }
+      .left_side p {
+        font-size: 0.6rem;
+      }
+      .left_side ul li strong,
+      .left_side ul li p {
+        font-size: 0.5rem;
+      }
+}
+@media (min-width:200px) and (max-width:790px){
+    .sides{
+        width: 100%;
+        display: grid;
+        grid-template-columns:repeat(10,1fr);
+        grid-template-rows:55% 45%;
+        grid-template-areas:'A A A A A A A A A A''B B B B B B B B B B';
+    }
+    .left_side{
+        grid-area: A;
+        display: grid;
+        grid-template-rows:30% 40% 30%;
+       text-align: center;
+    }
+    .left_side h2{
+        font-size: .8rem;
+    }
+    .left_side p{
+        line-height: 1rem;
+        font-size: .7rem;
+    }
+    .right_side{
+        grid-area: B;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .left_side ul li strong,
+    .left_side ul li p {
+      font-size: 0.5rem;
+    }
+}
+@media (min-width:200px) and (max-width:320px){
+    .left_side h2{
+        font-size: .6rem;
+    }
+    .left_side p{
+        line-height: .9rem;
+        font-size: .4rem;
+        font-weight: bold;
+    }
+    .left_side ul li strong,
+    .left_side ul li p {
+      font-size: 0.4rem;
+    }
+}
